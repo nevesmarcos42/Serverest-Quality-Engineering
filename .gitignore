@@ -1,0 +1,45 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Test reports
+target/
+test-results/
+cypress/videos/
+cypress/screenshots/
+tests/ui/cypress/videos/
+tests/ui/cypress/screenshots/
+karate-reports/
+*.log
+
+# Temporary test files
+inspection-results.json
+DEVELOPMENT_LOG.md
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Build artifacts
+dist/
+build/
+
+# Coverage
+coverage/
+.nyc_output/
+
+.fake
