@@ -5,9 +5,8 @@
 ![Gherkin](https://img.shields.io/badge/Gherkin-BDD-00D09C?style=for-the-badge&logo=cucumber)
 ![Status](https://img.shields.io/badge/Status-Ativo-success?style=for-the-badge)
 ![Tests](https://img.shields.io/badge/Testes-83%20Cenários-blue?style=for-the-badge)
-![Portuguese](https://img.shields.io/badge/Idioma-Português%20BR-green?style=for-the-badge)
 
-> Projeto completo de Quality Engineering demonstrando automação de testes de API e UI para a aplicação ServeRest, com especificações BDD em português do Brasil.
+> Projeto completo de Quality Engineering demonstrando automação de testes de API e UI para a aplicação ServeRest.
 
 **[Sobre](#sobre-o-projeto)** • **[Funcionalidades](#funcionalidades)** • **[Stack](#stack-tecnológico)** • **[Estrutura](#estrutura-do-projeto)** • **[Como Usar](#como-usar)** • **[Documentação](#documentação)** • **[Contribuir](#contribuindo)**
 
@@ -129,6 +128,15 @@ Este repositório é um **projeto profissional de Quality Engineering** que impl
 - **Java 11+** - Para execução do Karate
 - **npm** - Gerenciador de pacotes
 - **Git** - Controle de versão
+
+### CI/CD
+
+- **GitHub Actions** - Pipeline de integração contínua
+  - Execução automática em push e pull requests
+  - Jobs separados para testes de API e UI
+  - Cache de dependências (Maven e npm)
+  - Geração de artefatos (relatórios, vídeos, screenshots)
+  - Resumo de resultados dos testes
 
 ---
 
@@ -329,12 +337,24 @@ npm test
 npm run test:coverage
 ```
 
+### CI/CD com GitHub Actions
+
+O projeto possui uma pipeline automatizada que executa os testes em cada push ou pull request:
+
+- ✅ **Testes de API** - Execução via Maven com Java 11
+- ✅ **Testes de UI** - Execução Cypress em modo headless
+- ✅ **Artefatos** - Relatórios, vídeos e screenshots salvos por 30 dias
+- ✅ **Cache** - Dependências Maven e npm cacheadas para builds rápidos
+
+Para visualizar os resultados das execuções, acesse a aba **Actions** no repositório do GitHub.
+
 ### Relatórios
 
 Após a execução, os relatórios estarão disponíveis em:
 
 - **Karate**: `target/karate-reports/karate-summary.html`
 - **Cypress**: `tests/ui/cypress/reports/`
+- **GitHub Actions**: Artefatos disponíveis na aba Actions
 
 ---
 
