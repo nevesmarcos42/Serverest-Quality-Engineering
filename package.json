@@ -1,0 +1,32 @@
+{
+  "name": "serverest-quality-engineering",
+  "version": "1.0.0",
+  "description": "Projeto de Engenharia de Qualidade para a aplicação ServeRest",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:api && npm run test:ui",
+    "test:api": "mvn test -Dtest=TestRunner",
+    "test:api:karate": "mvn test -Dtest=TestRunner",
+    "test:ui": "cypress run",
+    "test:ui:open": "cypress open",
+    "report": "npm run report:api && npm run report:ui",
+    "report:api": "open target/karate-reports/karate-summary.html",
+    "report:ui": "open cypress/reports/index.html"
+  },
+  "keywords": [
+    "testing",
+    "quality-engineering",
+    "api-testing",
+    "ui-testing",
+    "bdd",
+    "karate",
+    "cypress"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "@cypress/xpath": "^2.0.3"
+  },
+  "dependencies": {}
+}
