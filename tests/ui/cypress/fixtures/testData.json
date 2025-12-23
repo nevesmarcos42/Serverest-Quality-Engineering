@@ -1,0 +1,51 @@
+{
+  "users": {
+    "regular": {
+      "nome": "Regular Test User",
+      "password": "teste123",
+      "administrador": "false"
+    },
+    "admin": {
+      "nome": "Admin Test User",
+      "password": "admin123",
+      "administrador": "true"
+    }
+  },
+  "products": {
+    "mouse": {
+      "nome": "Mouse Gamer RGB",
+      "preco": 150,
+      "descricao": "Mouse ergonômico com iluminação RGB",
+      "quantidade": 50
+    },
+    "keyboard": {
+      "nome": "Teclado Mecânico",
+      "preco": 300,
+      "descricao": "Teclado mecânico com switches blue",
+      "quantidade": 30
+    },
+    "headset": {
+      "nome": "Headset Gamer",
+      "preco": 200,
+      "descricao": "Headset com som surround 7.1",
+      "quantidade": 40
+    }
+  },
+  "apiMessages": {
+    "loginSuccess": "Login realizado com sucesso",
+    "registerSuccess": "Cadastro realizado com sucesso",
+    "deleteSuccess": "Registro excluído com sucesso",
+    "updateSuccess": "Registro alterado com sucesso",
+    "invalidCredentials": "Email e/ou senha inválidos",
+    "emailInUse": "Este email já está sendo usado",
+    "productNameInUse": "Já existe produto com esse nome",
+    "adminOnly": "Rota exclusiva para administradores",
+    "userNotFound": "Usuário não encontrado",
+    "productNotFound": "Produto não encontrado",
+    "cartNotFound": "Carrinho não encontrado",
+    "multipleCartsNotAllowed": "Não é permitido ter mais de 1 carrinho",
+    "insufficientStock": "Produto não possui quantidade suficiente",
+    "userHasCart": "Não é permitido excluir usuário com carrinho cadastrado",
+    "productInCart": "Não é permitido excluir produto que faz parte de carrinho"
+  }
+}
