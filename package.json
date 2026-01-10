@@ -1,0 +1,38 @@
+{
+  "name": "serverest-quality-engineering",
+  "version": "1.0.0",
+  "description": "Projeto completo de Quality Engineering demonstrando automação de testes de API e UI para a aplicação ServeRest",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:api && npm run test:ui",
+    "test:api": "mvn test",
+    "test:ui": "cypress run",
+    "test:ui:open": "cypress open",
+    "test:coverage": "npm run test",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  },
+  "keywords": [
+    "cypress",
+    "karate",
+    "api-testing",
+    "ui-testing",
+    "bdd",
+    "gherkin",
+    "quality-engineering",
+    "test-automation"
+  ],
+  "author": "Marcos Neves",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nevesmarcos42/Serverest-Quality-Engineering.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nevesmarcos42/Serverest-Quality-Engineering/issues"
+  },
+  "homepage": "https://github.com/nevesmarcos42/Serverest-Quality-Engineering#readme"
+}

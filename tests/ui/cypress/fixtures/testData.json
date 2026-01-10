@@ -1,0 +1,30 @@
+{
+  "usuarios": {
+    "padrao": {
+      "nome": "Usuario Teste",
+      "email": "teste@qa.com.br",
+      "password": "senha123",
+      "administrador": false
+    },
+    "admin": {
+      "nome": "Admin Teste",
+      "email": "admin@qa.com.br",
+      "password": "admin123",
+      "administrador": true
+    }
+  },
+  "produtos": [
+    {
+      "nome": "Mouse Logitech",
+      "preco": 150,
+      "descricao": "Mouse ergonômico",
+      "quantidade": 50
+    },
+    {
+      "nome": "Teclado Mecânico",
+      "preco": 300,
+      "descricao": "Teclado gamer RGB",
+      "quantidade": 30
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "usuarios": {
+    "usuarioPadrao": {
+      "nome": "Fulano da Silva",
+      "email": "fulano@qa.com",
+      "password": "teste",
+      "administrador": "true"
+    },
+    "usuarioComum": {
+      "nome": "Usuario Comum",
+      "email": "usuario@qa.com",
+      "password": "teste123",
+      "administrador": "false"
+    }
+  },
+  "produtos": {
+    "produtoPadrao": {
+      "nome": "Logitech MX Vertical",
+      "preco": 470,
+      "descricao": "Mouse",
+      "quantidade": 382
+    }
+  },
+  "mensagens": {
+    "cadastroSucesso": "Cadastro realizado com sucesso",
+    "loginSucesso": "Login realizado com sucesso",
+    "registroAlterado": "Registro alterado com sucesso",
+    "registroExcluido": "Registro excluído com sucesso",
+    "emailDuplicado": "Este email já está sendo usado",
+    "produtoDuplicado": "Já existe produto com esse nome",
+    "credenciaisInvalidas": "Email e/ou senha inválidos",
+    "rotaAdmin": "Rota exclusiva para administradores",
+    "tokenInvalido": "Token de acesso ausente, inválido, expirado ou usuário do token não existe mais"
+  }
+}
